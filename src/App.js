@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Emily is Poopity <code>src/App.js</code> and save to reload.
+          Emily is Cool <code>src/App.js</code> and save to reload.
         </p>
         <h1>Emily is awesome!</h1>
         <a
