@@ -2,6 +2,6 @@
 
 ## Setup Instructions:
 
-Step 1: `cd {{dir_of_app}}`
-Step 2: `npm install`
-Step 3: `npm start`
+1. `cd {{dir_of_app}}`
+2. `npm install`
+3. `npm start`
