@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import LoginForm from "./LoginForm";
+import * as colors from "./colors";
 
-const StyledP = styled.p`
-  color: #fff;
-  text-align: center;
+const StyledText = styled.div`
+  color: ${colors.TEXT_COLOR};
+  font-size: 12px;
+  padding: 0px 10px 5px 10px;
 `;
 const StyledHeader = styled.h1`
-  color: #fff;
-  text-align: center;
+  color: ${colors.TEXT_COLOR};
+  padding: 10px;
+  font-size: 20px;
 `;
 const Wrapper = styled.div`
   flex-direction: row;
@@ -37,8 +40,23 @@ const RightPane = styled.div`
   justify-content: center;
 `;
 
+const FormWrapper = styled.div`
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  flex-direction: column;
+`;
+
 const WomanMeditating = styled.img`
   max-width: 100%;
+`;
+
+const StyledLink = styled.a`
+  color: ${colors.LINK_COLOR};
+  text-decoration: none;
+  &:visited {
+    color: ${colors.LINK_COLOR};
+  }
 `;
 
 function App() {
@@ -48,7 +66,17 @@ function App() {
         <WomanMeditating src="/meditating-woman.png" />
       </LeftPane>
       <RightPane>
-        <LoginForm />
+        <FormWrapper>
+          <StyledHeader>Log In</StyledHeader>
+          <LoginForm />
+          <StyledText>
+            Don't have an account?{" "}
+            <StyledLink href="/sign-up">Sign Up</StyledLink>
+          </StyledText>
+          <StyledText>
+            <StyledLink href="/forgot-password">Forgot Password?</StyledLink>
+          </StyledText>
+        </FormWrapper>
       </RightPane>
     </Wrapper>
   );

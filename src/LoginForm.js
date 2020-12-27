@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import * as EmailValidator from "email-validator";
+import * as colors from "./colors";
 
 const StyledInput = styled.input`
   background: #ffffff;
@@ -19,7 +20,7 @@ const StyledLabel = styled.label`
   line-height: 17px;
   display: flex;
   align-items: center;
-  color: #4f4f4f;
+  color: ${colors.TEXT_COLOR};
   padding-bottom: 5px;
 `;
 
