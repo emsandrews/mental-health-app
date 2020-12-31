@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import LoginForm from "./LoginForm";
+import React, { Component } from "react";
+import RegisterForm from "./RegisterForm";
 import * as colors from "./colors";
 
 const StyledText = styled.div`
@@ -23,9 +24,8 @@ const LeftPane = styled.div`
   width: 50%;
   background: linear-gradient(
     151.45deg,
-    rgba(255, 139, 160, 0.4) 4.23%,
-    rgba(146, 150, 255, 0.6) 57.67%,
-    #cdcffe 94.91%
+    rgba(146, 150, 255, 1) 4.23%,
+    rgba(205, 207, 254, 1) 57.67%
   );
   align-items: center;
   justify-content: center;
@@ -34,7 +34,7 @@ const LeftPane = styled.div`
 const RightPane = styled.div`
   width: 50%;
   height: 100%;
-  background-color: white;
+  background-color: #f8f8fd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,27 +59,29 @@ const StyledLink = styled.a`
   }
 `;
 
-function App() {
-  return (
-    <Wrapper>
-      <LeftPane>
-        <WomanMeditating src="/meditating-woman.png" />
-      </LeftPane>
-      <RightPane>
-        <FormWrapper>
-          <StyledHeader>Log In</StyledHeader>
-          <LoginForm />
-          <StyledText>
-            Don't have an account?{" "}
-            <StyledLink href="/sign-up">Sign Up</StyledLink>
-          </StyledText>
-          <StyledText>
-            <StyledLink href="/forgot-password">Forgot Password?</StyledLink>
-          </StyledText>
-        </FormWrapper>
-      </RightPane>
-    </Wrapper>
-  );
+class Register extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <Wrapper>
+        <LeftPane>
+          <WomanMeditating src="/meditating-woman.png" />
+        </LeftPane>
+        <RightPane>
+          <FormWrapper>
+            <StyledHeader>Register</StyledHeader>
+            <RegisterForm />
+            <StyledText>
+              Already have an account?{" "}
+              <StyledLink href="/login">Log In</StyledLink>
+            </StyledText>
+          </FormWrapper>
+        </RightPane>
+      </Wrapper>
+    );
+  }
 }
 
-export default App;
+export default Register;

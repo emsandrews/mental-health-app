@@ -1,33 +1,12 @@
 import styled from "styled-components";
 import React from "react";
 import * as EmailValidator from "email-validator";
-import * as colors from "./colors";
-
-const StyledInput = styled.input`
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
-  box-sizing: border-box;
-  border-radius: 5px;
-  height: 40px;
-  width: 300px;
-  padding: 0px 10px 0px 10px;
-`;
+import TextField from "./components/TextField";
 
 const StyledForm = styled.form``;
-
-const StyledLabel = styled.label`
-  font-size: 14px;
-  line-height: 17px;
-  display: flex;
-  align-items: center;
-  color: ${colors.TEXT_COLOR};
-  padding-bottom: 5px;
-`;
-
-const InputWrapper = styled.div`
+const ButtonWrapper = styled.div`
   padding: 10px;
 `;
-
 const StyledButton = styled.button`
   height: 40px;
   width: 300px;
@@ -91,27 +70,24 @@ class LoginForm extends React.Component {
   render() {
     return (
       <StyledForm>
-        <InputWrapper>
-          <StyledLabel for="email">Email</StyledLabel>
-          <StyledInput
-            placeholder="your@email.ca"
-            id="email"
-            value={this.state.email}
-            onChange={this.handleChangeEmail}
-          ></StyledInput>
-        </InputWrapper>
-        <InputWrapper>
-          <StyledLabel for="password">Password</StyledLabel>
-          <StyledInput
-            type="password"
-            id="password"
-            value={this.state.password}
-            onChange={this.handleChangePassword}
-          ></StyledInput>
-        </InputWrapper>
-        <InputWrapper>
+        <TextField
+          fieldId="email"
+          placeholder="your@email.ca"
+          name="Email"
+          value={this.state.email}
+          handleChange={this.handleChangeEmail}
+        ></TextField>
+        <TextField
+          fieldID="password"
+          placeholder=""
+          name="Password"
+          type="password"
+          value={this.state.password}
+          handleChange={this.handleChangePassword}
+        ></TextField>
+        <ButtonWrapper>
           <StyledButton disabled={this.disableButton()}>Sign In</StyledButton>
-        </InputWrapper>
+        </ButtonWrapper>
       </StyledForm>
     );
   }
