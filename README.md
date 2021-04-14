@@ -2,12 +2,16 @@
 
 An app to track your mental health habits. 
 
-Create and account: 
+### Create and account: 
 
-Log Your Mood: 
+### Log Your Mood: 
+
 ![log mood](/log-moods.png)
 
-Track Your Mental Health Habits: 
+### Track Your Mental Health Habits: 
+
+![log mood](/logging-goals-table.png)
+
 
 Add New Goals: 
 
