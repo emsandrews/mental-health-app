@@ -5,6 +5,7 @@ An app to track your mental health habits.
 Create and account: 
 
 Log Your Mood: 
+![log mood](/log-moods.png)
 
 Track Your Mental Health Habits: 
 
