@@ -1,6 +1,19 @@
 # Work In Progress Mental Health App
 
-An app to track your mental health habits
+An app to track your mental health habits. 
+
+Create and account: 
+
+Log Your Mood: 
+
+Track Your Mental Health Habits: 
+
+Add New Goals: 
+
+View Your Progress: 
+
+Analyze Trends: 
+
 
 ## Getting Started
 
