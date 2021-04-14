@@ -22,11 +22,11 @@ An app to track your mental health habits.
 
 ### View Your Progress: 
 
-![log-goals](/Goals.png)
+![log-goals](/Progress-Summary.png)
 
 ### Analyze Trends: 
 
-![log-goals](/Goals.png)
+![log-goals](/Trends-Select Mood.png)
 
 
 ## Project Onboarding:
