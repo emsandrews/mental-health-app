@@ -10,7 +10,7 @@ An app to track your mental health habits.
 
 ### Track Your Mental Health Habits: 
 
-![log mood](/logging-goals-table.png)
+![log mood](/Logging-Main.png)
 
 
 Add New Goals: 
