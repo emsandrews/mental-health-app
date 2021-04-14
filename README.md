@@ -16,14 +16,20 @@ An app to track your mental health habits.
 ![log-goals](/Logging-Main.png)
 
 
-Add New Goals: 
+### Add New Goals: 
 
-View Your Progress: 
+![log-goals](/Goals.png)
 
-Analyze Trends: 
+### View Your Progress: 
+
+![log-goals](/Goals.png)
+
+### Analyze Trends: 
+
+![log-goals](/Goals.png)
 
 
-## Getting Started
+## Project Onboarding:
 
 #### Setting things up for the first time
 
