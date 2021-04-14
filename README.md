@@ -26,7 +26,7 @@ An app to track your mental health habits.
 
 ### Analyze Trends: 
 
-![log-goals](/Trends-Select Mood.png)
+![log-goals](/Trends-Select-Mood.png)
 
 
 ## Project Onboarding:
